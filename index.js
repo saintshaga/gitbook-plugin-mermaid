@@ -40,7 +40,11 @@ function convertToSvg(mermaidCode) {
           mermaidCode);
       });
     });
-  });
+  }, {
+    dnodeOpts: {
+        weak: false
+	  }
+});
 
   return deferred.promise;
 }
